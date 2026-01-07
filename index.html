@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Gain Session</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Join Session</h1>
+
+    <!-- Session Selection -->
+    <label for="sessionId">Session ID</label>
+    <input type="text" id="sessionId" placeholder="Enter session ID">
+
+    <!-- Participant Info -->
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name">
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="+1234567890">
+
+    <label for="countryCode">Country Code</label>
+    <input type="text" id="countryCode" placeholder="US, GH, IN" maxlength="2">
+
+    <!-- Join Group Button -->
+    <button id="joinGroupBtn">Join Group</button>
+
+    <!-- Confirm Join -->
+    <div id="confirmJoinDiv" style="display:none;">
+      <p>Have you joined the group? Then submit below.</p>
+      <button id="submitBtn">I Joined & Submit</button>
+    </div>
+
+    <!-- Status -->
+    <div id="status"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
