@@ -1,8 +1,13 @@
 const express = require('express');
 const app = express();
-const pool = require('./db');
+const sessionsRouter = require('./routes/sessions');
+const participantsRouter = require('./routes/participants');
 
 app.use(express.json());
+
+// Routes
+app.use('/api/sessions', sessionsRouter);
+app.use('/api/participants', participantsRouter);
 
 // Test route
 app.get('/', (req, res) => {
